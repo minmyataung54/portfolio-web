@@ -44,7 +44,7 @@ export const content = {
         },
         {
           name: "Data & Cloud",
-          items: ["MongoDB", "SQL", "Neo4j", "AWS S3", "AWS Secrets Manager", "Linux", "Google Cloud", "AWS"],
+          items: ["MongoDB", "SQL", "Neo4j", "Linux", "Google Cloud", "AWS"],
         },
         {
           name: "Tools & Delivery",
