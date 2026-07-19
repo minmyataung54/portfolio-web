@@ -1,0 +1,62 @@
+import {
+  FaReact,
+  FaNodeJs,
+  FaPython,
+  FaAws,
+  FaGitAlt,
+  FaGithub,
+  FaDocker,
+  FaDatabase,
+  FaCode,
+  FaRobot,
+  FaCloud,
+  FaJs,
+  FaHtml5,
+  FaTerminal,
+} from "react-icons/fa";
+import {
+  SiDotnet,
+  SiMongodb,
+  SiNeo4J,
+  SiGooglecloud,
+  SiLinux,
+  SiSourcetree,
+  SiGnubash,
+} from "react-icons/si";
+
+const iconMap = {
+  javascript: FaJs,
+  "node.js": FaNodeJs,
+  react: FaReact,
+  "html/css": FaHtml5,
+  ".net": SiDotnet,
+  ".net core": SiDotnet,
+  "rest apis": FaCode,
+  "rest api": FaCode,
+  mongodb: SiMongodb,
+  sql: FaDatabase,
+  neo4j: SiNeo4J,
+  "aws s3": FaAws,
+  "aws secrets manager": FaAws,
+  aws: FaAws,
+  linux: SiLinux,
+  "google cloud": SiGooglecloud,
+  git: FaGitAlt,
+  github: FaGithub,
+  docker: FaDocker,
+  sourcetree: SiSourcetree,
+  "bash/shell": SiGnubash,
+  "アジャイル開発": FaCode,
+  "agile workflows": FaCode,
+  "claude code": FaRobot,
+  gemini: FaRobot,
+  "chatgpt codex 5.5": FaRobot,
+  "github copilot": FaRobot,
+  "api integration": FaCloud,
+  "api連携": FaCloud,
+  python: FaPython,
+};
+
+export function getSkillIcon(name) {
+  return iconMap[name.toLowerCase()] || FaTerminal;
+}
