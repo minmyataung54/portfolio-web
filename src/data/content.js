@@ -310,6 +310,6 @@ export const profile = {
   name: "Min Myat Aung",
   email: "minmyataung20@gmail.com",
   phone: "+66 812 634 737",
-  linkedin: "https://linkedin.com/in/minmyataung",
+  linkedin: "https://www.linkedin.com/in/min-myat-aung-74a84b17a/",
   github: "https://github.com/minmyataung54",
 };
