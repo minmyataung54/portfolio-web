@@ -111,9 +111,12 @@ export default function Hero() {
           >
             <div className="animate-float relative h-72 w-72 lg:h-80 lg:w-80">
               <div className="absolute inset-0 rounded-[2.5rem] bg-gradient-to-br from-violet-500/40 via-cyan-400/20 to-pink-400/30 blur-2xl" />
-              <div className="glass-strong relative flex h-full w-full flex-col items-center justify-center rounded-[2.5rem] text-center">
-                <div className="font-display text-7xl font-bold gradient-text">MM</div>
-                <div className="mt-2 text-sm text-white/50">Full-Stack · AI</div>
+              <div className="glass-strong relative h-full w-full overflow-hidden rounded-[2.5rem]">
+                <img
+                  src="/profile.png"
+                  alt={t.hero.name}
+                  className="h-full w-full object-cover"
+                />
                 <div className="absolute -bottom-4 -right-4 glass rounded-2xl px-4 py-2 text-xs text-white/70">
                   &lt;/&gt; + AI
                 </div>
