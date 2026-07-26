@@ -117,9 +117,6 @@ export default function Hero() {
                   alt={t.hero.name}
                   className="h-full w-full object-cover"
                 />
-                <div className="absolute -bottom-4 -right-4 glass rounded-2xl px-4 py-2 text-xs text-white/70">
-                  &lt;/&gt; + AI
-                </div>
               </div>
             </div>
           </motion.div>
