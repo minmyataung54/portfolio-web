@@ -113,7 +113,7 @@ export default function Hero() {
               <div className="absolute inset-0 rounded-[2.5rem] bg-gradient-to-br from-violet-500/40 via-cyan-400/20 to-pink-400/30 blur-2xl" />
               <div className="glass-strong relative h-full w-full overflow-hidden rounded-[2.5rem]">
                 <img
-                  src="/profile.png"
+                  src="/webporfolio.png"
                   alt={t.hero.name}
                   className="h-full w-full object-cover"
                 />
