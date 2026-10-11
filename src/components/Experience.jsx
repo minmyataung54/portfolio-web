@@ -35,6 +35,18 @@ export default function Experience() {
                       </li>
                     ))}
                   </ul>
+                  {item.stack && (
+                    <div className="mt-5 flex flex-wrap gap-2 border-t border-white/10 pt-4">
+                      {item.stack.map((tech) => (
+                        <span
+                          key={tech}
+                          className="rounded-full bg-gradient-to-r from-violet-500/10 to-cyan-400/10 px-2.5 py-1 font-mono text-xs text-white/60 ring-1 ring-white/10"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
             </Reveal>

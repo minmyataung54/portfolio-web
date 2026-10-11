@@ -20,11 +20,17 @@ export default function Skills() {
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2">
           {t.skills.groups.map((group, gi) => (
-            <Reveal key={group.name} delay={gi * 0.1}>
-              <div className="glass glow-border h-full rounded-2xl p-6">
+            <Reveal key={group.name} delay={gi * 0.1} className={group.learning ? "sm:col-span-2" : ""}>
+              <div
+                className={
+                  group.learning
+                    ? "h-full rounded-2xl border border-dashed border-white/15 bg-white/[0.02] p-6"
+                    : "glass glow-border h-full rounded-2xl p-6"
+                }
+              >
                 <h3 className="font-display flex items-center gap-2 text-lg font-semibold text-white">
                   <span
-                    className={`h-2 w-2 rounded-full bg-gradient-to-r ${GROUP_ACCENTS[gi % GROUP_ACCENTS.length]}`}
+                    className={`h-2 w-2 rounded-full bg-gradient-to-r ${GROUP_ACCENTS[gi % GROUP_ACCENTS.length]} ${group.learning ? "animate-pulse" : ""}`}
                   />
                   {group.name}
                 </h3>
@@ -34,7 +40,11 @@ export default function Skills() {
                     return (
                       <span
                         key={item}
-                        className="flex items-center gap-1.5 rounded-full bg-white/5 px-3 py-1.5 text-sm text-white/70 ring-1 ring-white/10 transition hover:bg-white/10 hover:text-white"
+                        className={`flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm transition ${
+                          group.learning
+                            ? "border border-dashed border-white/20 text-white/55 hover:text-white/80"
+                            : "bg-white/5 text-white/70 ring-1 ring-white/10 hover:bg-white/10 hover:text-white"
+                        }`}
                       >
                         <Icon className="text-cyan-300/80" size={13} />
                         {item}

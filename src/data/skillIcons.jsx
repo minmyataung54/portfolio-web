@@ -13,6 +13,7 @@ import {
   FaJs,
   FaHtml5,
   FaTerminal,
+  FaJava,
 } from "react-icons/fa";
 import {
   SiDotnet,
@@ -22,6 +23,7 @@ import {
   SiLinux,
   SiSourcetree,
   SiGnubash,
+  SiLaravel,
 } from "react-icons/si";
 
 const iconMap = {
@@ -55,6 +57,8 @@ const iconMap = {
   "api integration": FaCloud,
   "api連携": FaCloud,
   python: FaPython,
+  java: FaJava,
+  "php (laravel)": SiLaravel,
 };
 
 export function getSkillIcon(name) {
