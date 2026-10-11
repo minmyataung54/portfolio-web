@@ -12,7 +12,7 @@ export const content = {
     hero: {
       greeting: "Hi, I'm",
       name: "Min Myat Aung",
-      role: "Full-Stack Developer / AI-Driven Software Engineer",
+      role: "Full-Stack Developer / AI-Driven Software Engineer / Infra Engineer",
       tagline:
         "I build web applications, secure APIs, and cloud-connected systems — and use AI-assisted tools to move fast without cutting corners.",
       ctaPrimary: "View Projects",
@@ -25,12 +25,12 @@ export const content = {
       paragraphs: [
         "I'm an adaptable full-stack developer with hands-on experience building web applications, secure APIs, cloud-connected systems, and automation-oriented integrations.",
         "I work comfortably across JavaScript, Node.js, React, Python, .NET, MongoDB, SQL, AWS, Docker, and Google Cloud, and I pick up new tools quickly when a project calls for it.",
-        "I use AI-assisted development tools — Claude Code, Gemini, ChatGPT Codex 5.5, and GitHub Copilot — for research, code generation, debugging, and rapid prototyping, without losing sight of maintainability and security.",
+        "I use AI-assisted development tools — Claude Code, Gemini, OpenAI Codex 5.5, and GitHub Copilot — for research, code generation, debugging, and rapid prototyping, without losing sight of maintainability and security.",
       ],
       stats: [
         { value: "4+", label: "Selected Projects" },
         { value: "2", label: "Industry / Research Roles" },
-        { value: "N3", label: "Japanese (N2 pending)" },
+        { value: "N2", label: "JLPT" },
         { value: "850", label: "TOEIC Score" },
       ],
     },
@@ -52,7 +52,7 @@ export const content = {
         },
         {
           name: "AI & Automation",
-          items: ["Claude Code", "Gemini", "ChatGPT Codex 5.5", "GitHub Copilot", "API Integration"],
+          items: ["Claude Code", "Gemini", "OpenAI Codex 5.5", "GitHub Copilot", "API Integration"],
         },
       ],
     },
@@ -73,15 +73,15 @@ export const content = {
           ],
         },
         {
-          role: "Research Assistant",
-          org: "King Mongkut's University of Technology Thonburi",
-          orgSub: "AI / NLP Research",
+          role: "Software Engineer",
+          org: "KMUTT",
+          orgSub: "AI / NLP Development",
           period: "Jan 2025 – Jun 2026",
           points: [
-            "Researched event-extraction techniques and reviewed literature on identifying crisis events in narrative-rich news articles using LLMs.",
-            "Cleaned and curated crawled Burmese news data to improve consistency, annotation quality, and reliability of the ground-truth dataset.",
-            "Used AI-assisted development to generate and validate batch-processing results through LLMs (Google Gemini, Gemma 3, Gemma 4).",
-            "Implemented a multi-event extraction approach that captures multiple co-occurring crisis types from a single article.",
+            "Developed Python Pipelines to crawl online new sources, clean and normalize article content and metadata, and store processed data in Google Cloud Storage.",
+            "Built and trained a classification model to identify crisis-related articles before sending relevant content to LLM-based extraction.",
+            "Evaluated and integrated LLMs, including Google Gemini, Gemma 3, Gemma 4, and AYA Cohere models, to extract structured crisis-event information from news articles.",
+            "Built and automated the cloud data pipeline using Terraform, Google Cloud Run Jobs and Services, and CLoud Build; contributed to a React, Next.js and Leaflet.js to build dashboard for displaying results.",
           ],
         },
       ],
@@ -139,7 +139,7 @@ export const content = {
       languagesTitle: "Languages",
       languages: [
         { name: "English", detail: "Business English — TOEIC 850" },
-        { name: "Japanese", detail: "Intermediate — JLPT N3 passed, JLPT N2 taken (result pending)" },
+        { name: "Japanese", detail: "Business Japanese — JLPT N2" },
       ],
     },
     contact: {
@@ -165,7 +165,7 @@ export const content = {
     hero: {
       greeting: "はじめまして、",
       name: "Min Myat Aung",
-      role: "フルスタックエンジニア ／ AI活用ソフトウェアエンジニア",
+      role: "フルスタックエンジニア ／ AI活用ソフトウェアエンジニア ／ インフラエンジニア",
       tagline:
         "Webアプリケーション、セキュアなAPI、クラウド連携システムの構築を得意としています。AIツールを活用し、品質を落とさずスピーディーに開発します。",
       ctaPrimary: "プロジェクトを見る",
@@ -178,12 +178,12 @@ export const content = {
       paragraphs: [
         "Webアプリケーション、セキュアなAPI、クラウド連携システム、自動化統合の構築経験を持つ、適応力のあるフルスタック開発者です。",
         "JavaScript、Node.js、React、Python、.NET、MongoDB、SQL、AWS、Docker、Google Cloudなどを幅広く扱い、必要に応じて新しい技術も素早く習得します。",
-        "Claude Code、Gemini、ChatGPT Codex 5.5、GitHub Copilotといった生成AIツールを、調査・コード生成・デバッグ・プロトタイピングに活用しつつ、保守性とセキュリティを重視した開発を心がけています。",
+        "Claude Code、Gemini、OpenAI Codex 5.5、GitHub Copilotといった生成AIツールを、調査・コード生成・デバッグ・プロトタイピングに活用しつつ、保守性とセキュリティを重視した開発を心がけています。",
       ],
       stats: [
         { value: "4+", label: "主要プロジェクト" },
         { value: "2", label: "実務・研究経験" },
-        { value: "N3", label: "日本語能力(N2結果待ち)" },
+        { value: "N2", label: "JLPT" },
         { value: "850", label: "TOEICスコア" },
       ],
     },
@@ -197,7 +197,7 @@ export const content = {
         },
         {
           name: "データ・クラウド",
-          items: ["MongoDB", "SQL", "Neo4j", "AWS S3", "AWS Secrets Manager", "Linux", "Google Cloud", "AWS"],
+          items: ["MongoDB", "SQL", "Neo4j", "Linux", "Google Cloud", "AWS"],
         },
         {
           name: "ツール・開発フロー",
@@ -205,7 +205,7 @@ export const content = {
         },
         {
           name: "AI活用",
-          items: ["Claude Code", "Gemini", "ChatGPT Codex 5.5", "GitHub Copilot", "API連携"],
+          items: ["Claude Code", "Gemini", "OpenAI Codex 5.5", "GitHub Copilot", "API連携"],
         },
       ],
     },
@@ -226,15 +226,15 @@ export const content = {
           ],
         },
         {
-          role: "リサーチアシスタント",
-          org: "キングモンクット工科大学トンブリー校",
-          orgSub: "AI・自然言語処理研究",
+          role: "ソフトウェアエンジニア",
+          org: "KMUTT",
+          orgSub: "AI・自然言語処理開発",
           period: "2025年1月 – 2026年6月",
           points: [
-            "物語性の高いニュース記事からLLMを用いて危機事象を抽出する手法を研究し、関連文献をレビュー。",
-            "クロールしたビルマ語ニュースデータをクリーニングし、正解データの一貫性・アノテーション品質・信頼性を改善。",
-            "AIを活用し、LLM(Google Gemini、Gemma 3、Gemma 4)によるバッチ処理結果の生成・検証を実施。",
-            "1つの記事内で複数の危機事象が同時に発生するケースに対応する、マルチイベント抽出手法を実装。",
+            "オンラインニュースソースをクロールし、記事本文とメタデータをクリーニング・正規化してGoogle Cloud Storageに保存するPythonパイプラインを開発。",
+            "危機関連の記事を識別する分類モデルを構築・学習し、該当する記事のみをLLMベースの抽出処理へ送る仕組みを実装。",
+            "Google Gemini、Gemma 3、Gemma 4、Cohere AyaなどのLLMを評価・統合し、ニュース記事から構造化された危機事象情報を抽出。",
+            "Terraform、Google Cloud Run(ジョブ・サービス)、Cloud Buildを用いてクラウドデータパイプラインを構築・自動化。また、React、Next.js、Leaflet.jsによる結果表示用ダッシュボードの開発にも貢献。",
           ],
         },
       ],
@@ -255,7 +255,7 @@ export const content = {
           name: "LLMベース情報抽出のエンドツーエンドパイプライン",
           role: "研究・バックエンド開発",
           description:
-            "Webクロールから管理者ダッシュボードまでのデータパイプラインを、GCP Cloud Run(ジョブ・サービス)、Cloud Build、Cloud Storageで構築。カスタム分類モデルと人手検証用の管理ダッシュボードを実装し、低資源言語(ミャンマー語)の情報抽出をGemini、Gemma、Aya、Cohere、SEA-LIONで研究・評価。",
+            "データソース(Webクロール)からエンドユーザー(ダッシュボード)までのデータパイプラインを、GCP Cloud Run(ジョブ・サービス)、Cloud Build、Cloud Storageで統合。あわせてカスタム分類モデルと人手検証用の管理ダッシュボードを実装し、低資源言語(ミャンマー語)の情報抽出をGemini、Gemma、Aya、Cohere、SEA-LIONで研究・評価。",
           tags: ["GCP Cloud Run", "Cloud Build", "LLM", "Python"],
           github: "https://github.com/AungKhantThaw47/CPE_Final_Project",
         },
@@ -292,7 +292,7 @@ export const content = {
       languagesTitle: "語学力",
       languages: [
         { name: "英語", detail: "ビジネスレベル — TOEIC 850点" },
-        { name: "日本語", detail: "中級 — JLPT N3合格、JLPT N2受験(結果待ち)" },
+        { name: "日本語", detail: "ビジネスレベル — JLPT N2" },
       ],
     },
     contact: {

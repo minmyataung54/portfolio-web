@@ -50,7 +50,7 @@ const iconMap = {
   "agile workflows": FaCode,
   "claude code": FaRobot,
   gemini: FaRobot,
-  "chatgpt codex 5.5": FaRobot,
+  "openai codex 5.5": FaRobot,
   "github copilot": FaRobot,
   "api integration": FaCloud,
   "api連携": FaCloud,
