@@ -1,0 +1,12 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "vite",
+  "buildCommand": "node backend/export-corpus.mjs && VITE_RESUME_API_URL=/ npm run build",
+  "outputDirectory": "dist",
+  "functions": {
+    "api/ask.py": {
+      "includeFiles": "backend/corpus.json",
+      "maxDuration": 25
+    }
+  }
+}

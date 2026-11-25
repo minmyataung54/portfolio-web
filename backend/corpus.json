@@ -1,0 +1,162 @@
+{
+  "en": [
+    {
+      "section": "about",
+      "title": "About Me",
+      "text": "Min Myat Aung\nFull-Stack Developer / AI-Driven Software Engineer / Infra Engineer\nI'm an adaptable full-stack developer with hands-on experience building web applications, secure APIs, cloud-connected systems, and automation-oriented integrations.\nI work comfortably across JavaScript, Node.js, React, Python, .NET, MongoDB, SQL, AWS, Docker, and Google Cloud, and I pick up new tools quickly when a project calls for it.\nI use AI-assisted development tools — Claude Code, Gemini, OpenAI Codex 5.5, and GitHub Copilot — for research, code generation, debugging, and rapid prototyping, without losing sight of maintainability and security."
+    },
+    {
+      "section": "skills",
+      "title": "Web & Backend",
+      "text": "JavaScript, Node.js, React, HTML/CSS, .NET, .NET Core, REST APIs"
+    },
+    {
+      "section": "skills",
+      "title": "Data & Cloud",
+      "text": "MongoDB, SQL, Neo4j, Linux, Google Cloud, AWS"
+    },
+    {
+      "section": "skills",
+      "title": "Tools & Delivery",
+      "text": "Git, GitHub, Docker, Sourcetree, Bash/Shell, Agile Workflows"
+    },
+    {
+      "section": "skills",
+      "title": "AI & Automation",
+      "text": "Claude Code, Gemini, OpenAI Codex 5.5, GitHub Copilot, API Integration"
+    },
+    {
+      "section": "skills",
+      "title": "Currently Learning",
+      "text": "Java, PHP (Laravel)"
+    },
+    {
+      "section": "experience",
+      "title": "2C2P Thailand · Application Development Intern",
+      "text": "FinTech / Payment Gateway\nJun 2025 – Jul 2025\nBuilt a secure file-transfer service that ingests client files and writes them to both on-premises SFTP servers and AWS S3 buckets.\nManaged SFTP and S3 credentials through AWS Secrets Manager instead of application config, and applied compression and archiving to files to reduce storage and transfer overhead.\nDeveloped scalable REST APIs for KYC (Know Your Customer) verification and a centralized master-data service supporting multiple countries.\nTook part in system architecture discussions and documented reusable design patterns to keep services consistent and maintainable.\nC#, .NET, REST APIs, AWS S3, AWS Secrets Manager, SFTP"
+    },
+    {
+      "section": "experience",
+      "title": "KMUTT · Software Engineer",
+      "text": "AI / NLP Development\nJan 2025 – Jun 2026\nBuilt Python crawlers to collect articles from online news sites, cleaned and normalized the article metadata, and stored the processed data in Google Cloud Storage.\nBuilt a text classification model to determine whether each article was about a crisis.\nUsed the Gemini 3 API to extract key information from articles classified as crisis-related and turn it into structured event records.\nContributed to a React and Next.js dashboard that displays the extracted data using TypeScript, JavaScript, and Leaflet.js map views. Provisioned the infrastructure with Terraform and deployed the pipeline to Cloud Run with Cloud Build CI/CD.\nPython, Gemini 3 API, TypeScript, JavaScript, Terraform, Cloud Run, Cloud Build, Cloud Storage, Next.js, Leaflet.js"
+    },
+    {
+      "section": "projects",
+      "title": "StallMate",
+      "text": "Backend Developer\nA Node.js and MongoDB platform that lets Thai stall owners publish menus and lets foreign customers view translated English content via the Azure Translation API. Integrated Stripe payments, cash-order support, and Google OAuth authentication, and organized delivery using Agile across three sprints.\nNode.js, MongoDB, Stripe, Google OAuth, Azure Translation API"
+    },
+    {
+      "section": "projects",
+      "title": "End-to-End Pipeline for LLM-Based Information Extraction",
+      "text": "Software Engineer at KMUTT\nBuilt an end-to-end pipeline that crawls online news, cleans article metadata, and stores the processed data in Google Cloud Storage. A custom classifier identifies crisis-related articles, and the Gemini 3 API extracts key details for a TypeScript and JavaScript dashboard. The pipeline runs on Cloud Run with Cloud Build.\nGCP Cloud Run, Cloud Build, Gemini 3 API, Python, TypeScript"
+    },
+    {
+      "section": "projects",
+      "title": "VR Hand Sign Recognition",
+      "text": "ML / Unity Developer\nBuilt a Unity scene to collect hand-bone data using Meta Oculus hand tracking, preprocessed the data with K-means clustering for ML training, and implemented a Unity scene that detects hand signs in VR from the trained model.\nUnity, Meta Oculus, K-means, Machine Learning"
+    },
+    {
+      "section": "projects",
+      "title": "Interactive Web Game",
+      "text": "Frontend Developer\nDeveloped a responsive browser-based game using React and Tailwind CSS, working with a UI/UX team and GitHub-based collaboration to deliver a user-friendly interface.\nReact, Tailwind CSS, GitHub"
+    },
+    {
+      "section": "projects",
+      "title": "Location-Based Campus Map Prototype",
+      "text": "Backend Developer\nBuilt a Node.js and Neo4j web application that calculates the shortest route between a user's current location and destination, with an optimized Cypher query deployed as a backend API in Express.js.\nNode.js, Neo4j, Express.js, Cypher"
+    },
+    {
+      "section": "education",
+      "title": "Education & Languages",
+      "text": "King Mongkut's University of Technology Thonburi\nB.Eng. in Computer Engineering\n2022 – 2026\nEnglish · Business English — TOEIC 850\nJapanese · Business Japanese — JLPT N2\nMyanmar (Burmese) · Native"
+    },
+    {
+      "title": "Salary expectations",
+      "text": "My expected annual salary is ¥3,300,000 to ¥4,000,000 (JPY)."
+    },
+    {
+      "title": "Preferred work location",
+      "text": "I am open to working anywhere in Japan."
+    }
+  ],
+  "ja": [
+    {
+      "section": "about",
+      "title": "自己紹介",
+      "text": "Min Myat Aung\nフルスタック・AI活用・インフラ開発\nフルスタックエンジニアとして、WebアプリケーションやセキュアなAPIの開発、クラウド連携や自動化の仕組みづくりに携わってきました。\nJavaScript、Node.js、React、Python、.NET、MongoDB、SQL、AWS、Docker、Google Cloudなどを使用してきました。案件に応じて、新しい技術も学びながら取り入れています。\nClaude Code、Gemini、OpenAI Codex 5.5、GitHub Copilotといった生成AIツールを、調査・コード生成・デバッグ・プロトタイピングに活用しつつ、保守性とセキュリティを重視した開発を心がけています。"
+    },
+    {
+      "section": "skills",
+      "title": "Web・バックエンド",
+      "text": "JavaScript, Node.js, React, HTML/CSS, .NET, .NET Core, REST API"
+    },
+    {
+      "section": "skills",
+      "title": "データ・クラウド",
+      "text": "MongoDB, SQL, Neo4j, Linux, Google Cloud, AWS"
+    },
+    {
+      "section": "skills",
+      "title": "ツール・開発フロー",
+      "text": "Git, GitHub, Docker, Sourcetree, Bash/Shell, アジャイル開発"
+    },
+    {
+      "section": "skills",
+      "title": "AI活用",
+      "text": "Claude Code, Gemini, OpenAI Codex 5.5, GitHub Copilot, API連携"
+    },
+    {
+      "section": "skills",
+      "title": "現在学習中",
+      "text": "Java, PHP (Laravel)"
+    },
+    {
+      "section": "experience",
+      "title": "2C2P Thailand · アプリケーション開発インターン",
+      "text": "フィンテック・決済ゲートウェイ\n2025年6月〜7月\nお客様から受け取ったファイルをオンプレミスのSFTPサーバーとAWS S3の両方に安全に保存する転送サービスを開発しました。\nSFTPとS3の認証情報をAWS Secrets Managerで管理しました。ファイルの圧縮とアーカイブ処理を組み込み、保存と転送にかかる負荷を抑えました。\n利用規模の拡大に対応できる本人確認（KYC）用のREST APIと、複数の国で使うマスターデータを一元管理するサービスを開発しました。\nシステム構成の検討に参加しました。サービス間で設計に一貫性を持たせ、保守しやすくするため、共通で使える設計パターンを文書にまとめました。\nC#, .NET, REST API, AWS S3, AWS Secrets Manager, SFTP"
+    },
+    {
+      "section": "experience",
+      "title": "KMUTT · ソフトウェアエンジニア",
+      "text": "AI・自然言語処理開発\n2025年1月〜2026年6月\nPythonでニュースサイトの記事を収集するクローラーを開発しました。収集した記事のメタデータを整理・正規化し、処理済みのデータをGoogle Cloud Storageに保存しました。\n記事の内容から、危機事象に関するニュースかどうかを判定するテキスト分類モデルを構築しました。\n危機事象に関連すると判定された記事から、Gemini 3 APIで必要な情報を抽出し、構造化データに変換しました。\n抽出結果を表示するReact・Next.jsのダッシュボード開発に参加し、TypeScriptとJavaScriptを用いた画面やLeaflet.jsによる地図表示に取り組みました。インフラはTerraformで構成し、Cloud BuildのCI/CDでパイプラインをCloud Runにデプロイしました。\nPython, Gemini 3 API, TypeScript, JavaScript, Terraform, Cloud Run, Cloud Build, Cloud Storage, Next.js, Leaflet.js"
+    },
+    {
+      "section": "projects",
+      "title": "StallMate",
+      "text": "バックエンド開発\nNode.jsとMongoDBを使い、タイの屋台がメニューを公開できるサービスを開発しました。利用者はAzure Translation APIで英訳したメニューを閲覧できます。Stripe決済や現金払いでの注文、Google OAuth認証を組み込み、3回のスプリントを通じてチーム開発を進めました。\nNode.js, MongoDB, Stripe, Google OAuth, Azure Translation API"
+    },
+    {
+      "section": "projects",
+      "title": "ニュース記事の収集・分類・情報抽出パイプライン",
+      "text": "KMUTTのソフトウェアエンジニア\nニュース記事の収集から、メタデータの整理、Google Cloud Storageへの保存までを行うパイプラインを構築しました。分類モデルで危機事象に関する記事を選び、Gemini 3 APIで抽出した情報をTypeScriptとJavaScriptで開発したダッシュボードに表示します。Cloud Buildを使ってCloud Runにデプロイしました。\nGCP Cloud Run, Cloud Build, Gemini 3 API, Python, TypeScript"
+    },
+    {
+      "section": "projects",
+      "title": "VRハンドサイン認識",
+      "text": "ML・Unity開発\nMeta Oculusのハンドトラッキング機能を使い、手の骨格データを収集するシーンをUnityで実装しました。K-means法で学習データを前処理し、学習済みモデルで手の形を認識できるVRシーンを作成しました。\nUnity, Meta Oculus, K-means, 機械学習"
+    },
+    {
+      "section": "projects",
+      "title": "インタラクティブWebゲーム",
+      "text": "フロントエンド開発\nReactとTailwind CSSを使い、画面の大きさに合わせて表示が変わるブラウザゲームを開発しました。UI/UXチームと連携し、GitHubで変更を共有しながら、操作しやすい画面を実装しました。\nReact, Tailwind CSS, GitHub"
+    },
+    {
+      "section": "projects",
+      "title": "現在地から案内するキャンパスマップ（試作）",
+      "text": "バックエンド開発\nNode.jsとNeo4jを使い、現在地から目的地までの最短経路を検索できるWebアプリを開発しました。経路検索用のCypherクエリを最適化し、Express.jsのAPIとして公開しました。\nNode.js, Neo4j, Express.js, Cypher"
+    },
+    {
+      "section": "education",
+      "title": "学歴・語学",
+      "text": "キングモンクット工科大学トンブリー校\n学士（工学）・専攻：コンピュータ工学\n2022年〜2026年\n英語 · ビジネスレベル（TOEIC 850点）\n日本語 · ビジネスレベル（日本語能力試験 N2）\nミャンマー語（ビルマ語） · 母語"
+    },
+    {
+      "title": "希望年収",
+      "text": "年収は330万円から400万円を希望しております。"
+    },
+    {
+      "title": "希望勤務地",
+      "text": "日本国内であれば、地域を問わず勤務可能です。"
+    }
+  ]
+}

@@ -38,6 +38,12 @@ Git ignores `backend/.env`. Commit the blank `backend/.env.example` template. Th
 
 The default allowance is 100 model calls per UTC day per process. `RAG_DAILY_MODEL_CALLS` overrides it. The counter resets on restart, so it is an application limit for a single running process. Excerpts remain available after the allowance is used or if the provider request fails.
 
+## Deploy to Vercel
+
+Import the GitHub repository into Vercel and select the `deploy-vercel` branch as the production branch. Use the repository root and the Vite preset. Add `GROQ_API_KEY` as a server environment variable for Production, then deploy. The website is static and `/api/ask` runs as a Python function on the same domain.
+
+The Vercel branch includes `backend/corpus.json` so it is available when Vercel packages the Python function. Run `node backend/export-corpus.mjs` and commit the refreshed JSON on that branch whenever you update the website content or interview facts.
+
 ## Deploy to Render Free
 
 Publish the repository changes to GitHub, then create a Blueprint from the branch containing `render.yaml` in the [Render dashboard](https://dashboard.render.com/blueprints). The Blueprint selects the Free plan and builds the Dockerfile, which serves the website and Q&A API at the same URL.
