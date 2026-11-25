@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaEnvelope, FaArrowDown } from "react-icons/fa";
+import { FiMessageSquare } from "react-icons/fi";
 import { useLanguage } from "../context/LanguageContext";
 import { profile } from "../data/content";
 
-export default function Hero() {
-  const { t } = useLanguage();
+export default function Hero({ resumeQAEnabled }) {
+  const { lang, t } = useLanguage();
 
   return (
     <section id="home" className="relative flex min-h-screen items-center pt-28 pb-16">
@@ -76,6 +77,15 @@ export default function Hero() {
               >
                 {t.hero.ctaSecondary}
               </a>
+              {resumeQAEnabled && (
+                <a
+                  href="#resume-qa"
+                  className="inline-flex items-center gap-2 rounded-full border border-cyan-300/35 bg-cyan-300/10 px-5 py-3 text-sm font-semibold text-cyan-100 transition hover:border-cyan-200 hover:bg-cyan-300/20 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-300"
+                >
+                  <FiMessageSquare aria-hidden="true" />
+                  {lang === "ja" ? "経歴について質問する" : "Ask me about my work"}
+                </a>
+              )}
             </motion.div>
 
             <motion.div

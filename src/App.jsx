@@ -8,14 +8,18 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
+import ResumeQA from "./components/ResumeQA";
+
+const resumeQAEnabled = Boolean(import.meta.env.DEV || import.meta.env.VITE_RESUME_API_URL);
 
 function App() {
   return (
     <LanguageProvider>
       <BackgroundDecor />
-      <Navbar />
+      <Navbar resumeQAEnabled={resumeQAEnabled} />
       <main>
-        <Hero />
+        <Hero resumeQAEnabled={resumeQAEnabled} />
+        {resumeQAEnabled && <ResumeQA />}
         <About />
         <Skills />
         <Experience />

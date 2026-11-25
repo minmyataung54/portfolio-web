@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { FiMessageSquare } from "react-icons/fi";
 import { useLanguage } from "../context/LanguageContext";
 
 const SECTION_IDS = ["about", "skills", "experience", "projects", "education", "contact"];
 
-export default function Navbar() {
+export default function Navbar({ resumeQAEnabled }) {
   const { t, lang, toggleLang } = useLanguage();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,6 +23,17 @@ export default function Navbar() {
     setMenuOpen(false);
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
+
+  const chatLink = resumeQAEnabled && (
+    <a
+      href="#resume-qa"
+      onClick={() => setMenuOpen(false)}
+      className="inline-flex items-center gap-2 rounded-xl border border-cyan-300/35 bg-cyan-300/10 px-3 py-2 text-sm font-semibold whitespace-nowrap text-cyan-100 transition hover:border-cyan-200 hover:bg-cyan-300/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300"
+    >
+      <FiMessageSquare aria-hidden="true" className="shrink-0" />
+      {t.nav.resumeQA}
+    </a>
+  );
 
   return (
     <header
@@ -42,7 +54,7 @@ export default function Navbar() {
             MM<span className="gradient-text">A</span>
           </button>
 
-          <nav className="hidden md:flex items-center gap-1">
+          <nav className={`hidden items-center gap-1 ${resumeQAEnabled ? "lg:flex" : "md:flex"}`}>
             {links.map((link) => (
               <button
                 key={link.id}
@@ -52,6 +64,7 @@ export default function Navbar() {
                 {link.label}
               </button>
             ))}
+            {chatLink}
           </nav>
 
           <div className="flex items-center gap-2">
@@ -87,9 +100,10 @@ export default function Navbar() {
             </button>
 
             <button
-              className="md:hidden rounded-lg p-2 text-white/80 hover:bg-white/5"
+              className={`rounded-lg p-2 text-white/80 hover:bg-white/5 ${resumeQAEnabled ? "lg:hidden" : "md:hidden"}`}
               onClick={() => setMenuOpen((o) => !o)}
               aria-label="Toggle menu"
+              aria-expanded={menuOpen}
             >
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 {menuOpen ? (
@@ -108,9 +122,10 @@ export default function Navbar() {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              className="md:hidden overflow-hidden mt-2 rounded-2xl glass-strong"
+              className={`mt-2 overflow-hidden rounded-2xl glass-strong ${resumeQAEnabled ? "lg:hidden" : "md:hidden"}`}
             >
               <div className="flex flex-col p-2">
+                {chatLink}
                 {links.map((link) => (
                   <button
                     key={link.id}
